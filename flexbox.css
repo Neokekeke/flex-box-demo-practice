@@ -1,0 +1,170 @@
+body{
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: coral;
+    padding: 20px;
+    font-family: 'Microsoft Yahei', sans-serif;
+}
+h1,h2{
+    font-weight: 600;
+    padding: 5px 0;
+    border-bottom: 3px solid #797979;
+}
+h1,h2,h3{
+    color: #797979;
+}
+p{
+    font-size: 16px;
+    background-color: chocolate;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: white;
+}
+.box{
+    display: flex;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+.box-item{
+    margin: 3px 5px;
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+    line-height: 200px;
+    text-align: center;
+    font-size: 100px;
+    color: whitesmoke;
+    font-weight: 500;
+}
+.item-tall{
+    height: 400px;
+    line-height: 400px;
+}
+.box-tall {
+    height: 800px;
+}
+.box-1{
+    flex-direction: row;
+    width: 100%;
+}
+.box-2{
+    flex-direction: row-reverse;
+    width: 100%;
+}
+.box-3{
+    flex-direction: column;
+    width: 100%;
+}
+.box-4{
+    flex-direction: column-reverse;
+    width: 100%;
+}
+.box-5{
+    flex-wrap: nowrap;
+}
+.box-6{
+    flex-wrap: wrap;
+}
+.box-7{
+    flex-wrap: wrap-reverse;
+}
+.box-8{
+    flex-flow: row-reverse wrap-reverse;
+}
+.box-9{
+    justify-content: flex-start;
+}
+.box-10{
+    justify-content: flex-end;
+}
+.box-11{
+    justify-content: center;
+}
+.box-12{
+    justify-content: space-between;
+}
+.box-13{
+    justify-content: space-around;
+}
+.box-14{
+    align-items: flex-start;
+}
+.box-15{
+    align-items: flex-end;
+}
+.box-16{
+    align-items: center;
+}
+.box-17{
+    align-items: baseline;
+    text-decoration: underline;
+    color: white;
+}
+.box-17 .box-tall{
+    text-decoration: underline;
+}
+.box-18{
+    align-items: stretch;
+}
+.box-18 .box-item{
+    height: auto;
+}
+.box-19{
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.box-20{
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+.box-21{
+    align-content: center;
+    flex-wrap: wrap;
+}
+.box-22{
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.box-23{
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.box-24{
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+.box-24 .box-item{
+    height: auto;
+}
+.box-25 .item-min{
+    order: -1;
+}
+.box-item div{
+    font-size: 14px;
+    position: relative;
+    top: -150px;
+}
+.box-26 .item-double{
+    flex-grow: 2;
+}
+.box-27 .box-item{
+    width: 400px;
+}
+.box-27 .item-shrink{
+    flex-shrink: 0; /* flex-shrink的默认值是1*/
+}
+.box-28{
+    flex-basis: auto;
+}
+.box-29{
+    flex: auto;
+}
+.box-30{
+    flex: none;
+}
+.box-31{
+    height: 400px;
+}
+.box-31 .align-self{
+    align-self: flex-end;
+}
